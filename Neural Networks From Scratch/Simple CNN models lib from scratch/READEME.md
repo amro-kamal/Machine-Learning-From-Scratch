@@ -2,7 +2,7 @@ In this simple lib I implemented some of the famous cnn architectures in pytorch
 
 You use the lib to to train any of these models on your custom data using few lines of code
 
-First prepare your pytirch dataloader
+First prepare your data using pytorch dataloader. Here will I use cifar10 dataset from torchvision
  ```python
 import troch.nn as nn
 from torchvision.datasets import CIFAR10 
@@ -24,7 +24,8 @@ num_classes=10
 ```
 Then create the model ,  optimizer and define the loss function
 
-```
+```python
+
 from cnnModels.Alexnet import AlexNet
 alexnet = AlexNet(num_classes)
 
@@ -32,8 +33,16 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(alexnet.parameters(), lr=1e-4)
 
 ```
+Lets check for the gpu 
+```python
+if torch.cuda.is_available():
+  device = torch.device('cuda')
+else:
+  device = torch.device('cpu')
+device
+```
 Now train the model you want using just one line of code
 
-```
+```python
 alexnet.Train(device ,criterion, train_loader, test_loader , optimizer, num_epochs=10)
 ```
