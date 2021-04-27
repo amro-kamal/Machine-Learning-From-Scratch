@@ -1,9 +1,9 @@
 In this simple lib I implemented some of the famous cnn architectures in pytorch. You can use the lib to to train any of these models on your custom data using few lines of code.
 
 
-**VGG16** 
-**ResNet**
-**InceptionV1**
+**VGG16,** 
+**ResNet,**
+**InceptionV1, and**
 **Alexnet**
 
 
