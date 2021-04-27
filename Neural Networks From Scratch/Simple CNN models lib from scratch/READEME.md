@@ -4,8 +4,7 @@ In this simple lib I implemented some of the famous cnn architectures in pytorch
 **VGG16 
 ResNet
 InceptionV1 
-Alexnet
-**
+Alexnet**
 
 
 First prepare your data using pytorch dataloader. Here will I use cifar10 dataset from torchvision
