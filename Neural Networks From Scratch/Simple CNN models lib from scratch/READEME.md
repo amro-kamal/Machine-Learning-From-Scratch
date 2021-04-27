@@ -1,6 +1,12 @@
-In this simple lib I implemented some of the famous cnn architectures in pytorch like VGG16 , ResNet , InceptionV1 and Alexnet
+In this simple lib I implemented some of the famous cnn architectures in pytorch. You can use the lib to to train any of these models on your custom data using few lines of code.
 
-You use the lib to to train any of these models on your custom data using few lines of code
+
+**VGG16 
+ResNet
+InceptionV1 
+Alexnet
+**
+
 
 First prepare your data using pytorch dataloader. Here will I use cifar10 dataset from torchvision
  ```python
