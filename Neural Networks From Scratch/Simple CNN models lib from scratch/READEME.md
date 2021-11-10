@@ -7,7 +7,7 @@ In this simple lib I implemented some of the famous cnn architectures in pytorch
 **Alexnet**
 
 
-First prepare your data using pytorch dataloader. Here will I use cifar10 dataset from torchvision
+First prepare your data using pytorch dataloader. Here I will use cifar10 dataset from torchvision.
  ```python
 import troch.nn as nn
 from torchvision.datasets import CIFAR10 
